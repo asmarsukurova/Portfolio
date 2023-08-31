@@ -343,6 +343,7 @@ ol {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .one-page .full-page #experience-page .full-experience-page .boxes-experience .box-one {
   background-color: #fff;

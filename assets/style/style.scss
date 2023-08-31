@@ -3,563 +3,477 @@
 @import "./reset";
 @import "./variable";
 
-
 .one-page {
-    .left-menu-bar {
-        padding: 40px;
-        position: fixed;
+  .left-menu-bar {
+    padding: 40px;
+    position: fixed;
+    @include center;
+    flex-direction: column;
+
+    .image-box {
+      img {
+        width: 60%;
+        height: 130px;
+        border-radius: 15cm;
+        margin-bottom: 15px;
+        margin-left: 25px;
+      }
+
+      h4 {
+        font-weight: 600;
+      }
+    }
+
+    .pages-box {
+      @include center;
+      margin-top: 80px;
+      margin-bottom: 100px;
+
+      ul {
+        li {
+          list-style: none;
+          padding: 10px 0;
+
+          // .active {
+          //     color: $--button-color;
+          // }
+
+          a {
+            text-decoration: none;
+            font-size: 21px;
+            color: $--color-p;
+          }
+        }
+      }
+    }
+
+    .sosial-media-box-in-bar {
+      .sosial-media-box {
         @include center;
-        flex-direction: column;
 
-        .image-box {
+        .facebook {
+          margin-right: 15px;
 
-            img {
-                width: 60%;
-                height: 130px;
-                border-radius: 15cm;
-                margin-bottom: 15px;
-                margin-left: 25px;
-            }
-
-            h4 {
-                font-weight: 600;
-
-            }
+          i {
+            font-size: 23px;
+            background-color: $--ccc;
+            padding: 17px 20px;
+            border-radius: 5cm;
+          }
         }
 
-        .pages-box {
-            @include center;
-            margin-top: 80px;
-            margin-bottom: 100px;
+        .twitter {
+          margin-right: 15px;
 
+          i {
+            font-size: 23px;
+            background-color: $--ccc;
+            padding: 17px;
+            border-radius: 5cm;
+          }
+        }
+
+        .linkedin {
+          i {
+            font-size: 23px;
+            background-color: $--ccc;
+            padding: 17px 19px;
+            border-radius: 5cm;
+          }
+        }
+      }
+
+      h4 {
+        color: $--color-p;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .full-page {
+    #home-page {
+      background-color: $--background-purple;
+      padding: 160px 0;
+
+      .home-display {
+        @include beetwen;
+        padding: 0px 40px;
+
+        .text-content-home {
+          .content-box {
+            h2 {
+              font-size: 70px;
+              font-weight: 700;
+              margin-bottom: 15px;
+            }
+
+            h5 {
+              color: $--color-p;
+              margin-top: 25px;
+            }
+          }
+
+          .button-box-home {
+            margin-top: 80px;
+            @include start;
+
+            .first-button {
+              margin-right: 20px;
+
+              a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $--white;
+                background-color: $--button-color;
+                padding: 20px 40px;
+                @include border;
+
+                &:hover {
+                  text-decoration: none;
+                  font-size: 20px;
+                  color: $--button-color;
+                  background-color: transparent;
+                  border: 1px solid $--button-color;
+                  padding: 20px 40px;
+                  @include border;
+                  transition: 0.5s ease;
+                }
+
+                &:not(:hover) {
+                  transition: 0.5s ease;
+                }
+              }
+            }
+
+            .last-button {
+              a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $--button-color;
+                background-color: transparent;
+                border: 1px solid $--button-color;
+                padding: 19px 50px;
+                @include border;
+
+                &:hover {
+                  text-decoration: none;
+                  font-size: 20px;
+                  color: $--white;
+                  background-color: $--button-color;
+                  padding: 20px 50px;
+                  @include border;
+                  transition: 0.5s ease;
+                }
+
+                &:not(:hover) {
+                  transition: 0.5s ease;
+                }
+              }
+            }
+          }
+
+          .contact-box-home {
+            margin-top: 90px;
+            border-left: 6px solid $--orange;
+            padding: 19px 0;
+
+            h5 {
+              font-size: 23px;
+              margin-bottom: 10px;
+              margin-left: 10px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .home-image-box {
+          margin-right: 30px;
+          margin-top: 50px;
+          padding-right: 40px;
+
+          img {
+            border-radius: 5cm;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    #about-page {
+      padding: 165px 40px;
+
+      .full-about {
+        .first-part-about {
+          @include beetwen;
+
+          .part-one {
+            h5 {
+              color: $--color-p;
+              margin-bottom: 15px;
+            }
+
+            h2 {
+              font-weight: 700;
+              font-size: 50px;
+              margin-bottom: 12px;
+            }
+
+            h6 {
+              font-size: 18px;
+            }
+
+            .first-button {
+              margin-right: 20px;
+              margin-top: 70px;
+
+              a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $--white;
+                background-color: $--button-color;
+                padding: 20px 40px;
+                @include border;
+
+                &:hover {
+                  text-decoration: none;
+                  font-size: 20px;
+                  color: $--button-color;
+                  background-color: transparent;
+                  border: 1px solid $--button-color;
+                  padding: 20px 40px;
+                  @include border;
+                  transition: 0.5s ease;
+                }
+
+                &:not(:hover) {
+                  transition: 0.5s ease;
+                }
+              }
+            }
+          }
+
+          .part-two {
+            .content-part {
+              p {
+                font-size: 22px;
+                margin-bottom: 30px;
+                margin-top: 10px;
+              }
+            }
 
             ul {
+              @include around;
+              margin-top: 80px;
 
+              li {
+                list-style: none;
 
-
-                li {
-                    list-style: none;
-                    padding: 10px 0;
-
-
-                    // .active {
-                    //     color: $--button-color;
-                    // }
-
-
-                    a {
-                        text-decoration: none;
-                        font-size: 21px;
-                        color: $--color-p;
-
-
-
-                    }
+                a {
+                  color: $--color-p;
+                  font-size: 20px;
                 }
+
+                h5 {
+                  margin-top: 10px;
+                  font-weight: 700;
+                  color: $--button-color;
+                  font-size: 23px;
+                }
+              }
             }
+          }
         }
 
-        .sosial-media-box-in-bar {
+        .boxes-part-about {
+          margin-top: 60px;
+          @include around;
 
-            .sosial-media-box {
-                @include center;
+          .box-one {
+            width: 30%;
+            height: 200px;
+            background-color: $--blue;
+            @include center;
+            flex-direction: column;
+            @include border;
 
-                .facebook {
-                    margin-right: 15px;
+            h2 {
+              font-weight: 700;
+            }
+          }
 
-                    i {
-                        font-size: 23px;
-                        background-color: $--ccc;
-                        padding: 17px 20px;
-                        border-radius: 5cm;
-                    }
-                }
+          .box-two {
+            width: 30%;
+            height: 200px;
+            background-color: $--pink;
+            @include center;
+            flex-direction: column;
+            @include border;
 
-                .twitter {
-                    margin-right: 15px;
+            h2 {
+              font-weight: 700;
+            }
+          }
 
-                    i {
-                        font-size: 23px;
-                        background-color: $--ccc;
-                        padding: 17px;
-                        border-radius: 5cm;
-                    }
-                }
+          .box-three {
+            width: 30%;
+            height: 200px;
+            background-color: $--green;
+            @include center;
+            flex-direction: column;
+            @include border;
 
-                .linkedin {
-                    i {
-                        font-size: 23px;
-                        background-color: $--ccc;
-                        padding: 17px 19px;
-                        border-radius: 5cm;
-                    }
-                }
+            h2 {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    #experience-page {
+      background-color: $--background-purple;
+      padding: 110px 40px;
+
+      .full-experience-page {
+        .content-experience {
+          h6 {
+            font-size: 25px;
+            color: $--color-p;
+          }
+
+          h3 {
+            font-size: 35px;
+            font-weight: 700;
+            color: $--button-color;
+          }
+        }
+
+        .boxes-experience {
+          @include around;
+          flex-wrap: wrap;
+
+          .box-one {
+            background-color: $--white;
+            display: inline-block;
+            padding: 60px;
+            margin-top: 40px;
+            @include border;
+
+            &:hover {
+              transform: translateY(-15px);
+              transition: 0.5s ease;
+            }
+
+            &:not(:hover) {
+              transform: translateY(0);
+              transition: 0.5s ease;
+            }
+
+            h5 {
+              font-size: 20px;
+              color: $--orange;
+            }
+
+            h3 {
+              font-size: 30px;
+              font-weight: 700;
+              color: $--button-color;
+              margin-bottom: 25px;
+            }
+
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    #services-page {
+      padding: 110px 40px;
+
+      .full-services-page {
+        .content-services {
+          h6 {
+            font-size: 25px;
+            color: $--color-p;
+          }
+
+          h3 {
+            font-size: 35px;
+            font-weight: 700;
+            color: $--button-color;
+          }
+        }
+
+        .boxes-services-page {
+          @include around;
+          margin-top: 40px;
+
+          .services-box-one {
+            @include border;
+            border: 1px solid $--black;
+            display: inline-block;
+            padding: 50px 50px;
+
+            &:hover {
+              transform: translateY(-15px);
+              transition: 0.5s ease;
+            }
+
+            &:not(:hover) {
+              transform: translateY(0);
+              transition: 0.5s ease;
+            }
+
+            h6 {
+              font-size: 40px;
+              color: $--color-p;
             }
 
             h4 {
-                color: $--color-p;
-                margin-top: 40px;
+              font-size: 40px;
+              font-weight: 700;
+              color: $--button-color;
             }
-        }
 
+            p {
+              font-size: 20px;
+              color: $--color-p;
+              margin: 25px 0 65px 0;
+            }
+
+            span {
+              font-size: 22px;
+              font-weight: 700;
+              margin-right: 15px;
+            }
+
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
     }
 
-    .full-page {
+    #portfolio-page {
+      .full-portfolio-page {
+        .content-portfolio {
+          h6 {
+            font-size: 25px;
+            color: $--color-p;
+          }
 
-
-        #home-page {
-            background-color: $--background-purple;
-            padding: 160px 0;
-
-
-            .home-display {
-                @include beetwen;
-                padding: 0px 40px;
-
-                .text-content-home {
-
-
-                    .content-box {
-                        h2 {
-                            font-size: 70px;
-                            font-weight: 700;
-                            margin-bottom: 15px;
-
-                        }
-
-                        h5 {
-                            color: $--color-p;
-                            margin-top: 25px;
-                        }
-                    }
-
-                    .button-box-home {
-                        margin-top: 80px;
-                        @include start;
-
-                        .first-button {
-                            margin-right: 20px;
-
-
-                            a {
-                                text-decoration: none;
-                                font-size: 20px;
-                                color: $--white;
-                                background-color: $--button-color;
-                                padding: 20px 40px;
-                                @include border;
-
-                                &:hover {
-                                    text-decoration: none;
-                                    font-size: 20px;
-                                    color: $--button-color;
-                                    background-color: transparent;
-                                    border: 1px solid $--button-color;
-                                    padding: 20px 40px;
-                                    @include border;
-                                    transition: .5s ease;
-                                }
-
-                                &:not(:hover) {
-                                    transition: .5s ease;
-                                }
-
-                            }
-                        }
-
-                        .last-button {
-                            a {
-                                text-decoration: none;
-                                font-size: 20px;
-                                color: $--button-color;
-                                background-color: transparent;
-                                border: 1px solid $--button-color;
-                                padding: 19px 50px;
-                                @include border;
-
-                                &:hover {
-                                    text-decoration: none;
-                                    font-size: 20px;
-                                    color: $--white;
-                                    background-color: $--button-color;
-                                    padding: 20px 50px;
-                                    @include border;
-                                    transition: .5s ease;
-                                }
-
-                                &:not(:hover) {
-                                    transition: .5s ease;
-                                }
-
-                            }
-                        }
-
-                    }
-
-
-                    .contact-box-home {
-                        margin-top: 90px;
-                        border-left: 6px solid $--orange;
-                        padding: 19px 0;
-
-                        h5 {
-                            font-size: 23px;
-                            margin-bottom: 10px;
-                            margin-left: 10px;
-                            cursor: pointer;
-                        }
-                    }
-                }
-
-
-                .home-image-box {
-                    margin-right: 30px;
-                    margin-top: 50px;
-                    padding-right: 40px;
-
-                    img {
-                        border-radius: 5cm;
-                        width: 100%;
-                    }
-                }
-            }
+          h3 {
+            font-size: 35px;
+            font-weight: 700;
+            color: $--button-color;
+          }
         }
-
-        #about-page {
-            padding: 165px 40px;
-
-            .full-about {
-                .first-part-about {
-                    @include beetwen;
-
-                    .part-one {
-                        h5 {
-                            color: $--color-p;
-                            margin-bottom: 15px;
-                        }
-
-                        h2 {
-                            font-weight: 700;
-                            font-size: 50px;
-                            margin-bottom: 12px;
-                        }
-
-                        h6 {
-                            font-size: 18px;
-
-                        }
-
-
-                        .first-button {
-                            margin-right: 20px;
-                            margin-top: 70px;
-
-
-                            a {
-                                text-decoration: none;
-                                font-size: 20px;
-                                color: $--white;
-                                background-color: $--button-color;
-                                padding: 20px 40px;
-                                @include border;
-
-                                &:hover {
-                                    text-decoration: none;
-                                    font-size: 20px;
-                                    color: $--button-color;
-                                    background-color: transparent;
-                                    border: 1px solid $--button-color;
-                                    padding: 20px 40px;
-                                    @include border;
-                                    transition: .5s ease;
-                                }
-
-                                &:not(:hover) {
-                                    transition: .5s ease;
-                                }
-
-                            }
-                        }
-                    }
-
-                    .part-two {
-                        .content-part {
-                            p {
-                                font-size: 22px;
-                                margin-bottom: 30px;
-                                margin-top: 10px;
-                            }
-                        }
-
-                        ul {
-                            @include around;
-                            margin-top: 80px;
-
-                            li {
-                                list-style: none;
-
-                                a {
-                                    color: $--color-p;
-                                    font-size: 20px;
-                                }
-
-                                h5 {
-                                    margin-top: 10px;
-                                    font-weight: 700;
-                                    color: $--button-color;
-                                    font-size: 23px;
-                                }
-
-                            }
-                        }
-
-
-
-                    }
-
-                }
-
-
-                .boxes-part-about {
-                    margin-top: 60px;
-                    @include around;
-
-                    .box-one {
-                        width: 30%;
-                        height: 200px;
-                        background-color: $--blue;
-                        @include center;
-                        flex-direction: column;
-                        @include border;
-
-                        h2 {
-                            font-weight: 700;
-                        }
-
-                    }
-
-                    .box-two {
-                        width: 30%;
-                        height: 200px;
-                        background-color: $--pink;
-                        @include center;
-                        flex-direction: column;
-                        @include border;
-
-
-                        h2 {
-                            font-weight: 700;
-                        }
-                    }
-
-                    .box-three {
-                        width: 30%;
-                        height: 200px;
-                        background-color: $--green;
-                        @include center;
-                        flex-direction: column;
-                        @include border;
-
-
-                        h2 {
-                            font-weight: 700;
-                        }
-                    }
-                }
-            }
-        }
-
-
-        #experience-page {
-            background-color: $--background-purple;
-            padding: 110px 40px;
-
-            .full-experience-page {
-
-                .content-experience {
-                    h6 {
-                        font-size: 25px;
-                        color: $--color-p;
-                    }
-
-                    h3 {
-                        font-size: 35px;
-                        font-weight: 700;
-                        color: $--button-color;
-                    }
-                }
-
-
-                .boxes-experience {
-                    @include around;
-
-
-                    .box-one {
-                        background-color: $--white;
-                        display: inline-block;
-                        padding: 60px;
-                        margin-top: 40px;
-                        @include border;
-
-
-                        &:hover {
-                            transform: translateY(-15px);
-                            transition: .5s ease;
-                        }
-
-                        &:not(:hover) {
-                            transform: translateY(0);
-                            transition: .5s ease;
-                        }
-
-
-
-                        h5 {
-                            font-size: 20px;
-                            color: $--orange;
-                        }
-
-                        h3 {
-                            font-size: 30px;
-                            font-weight: 700;
-                            color: $--button-color;
-                            margin-bottom: 25px;
-                        }
-
-                        p {
-                            font-size: 18px;
-                        }
-
-                    }
-                }
-
-            }
-        }
-
-        #services-page {
-            padding: 110px 40px;
-
-
-            .full-services-page {
-                .content-services {
-                    h6 {
-                        font-size: 25px;
-                        color: $--color-p;
-                    }
-
-                    h3 {
-                        font-size: 35px;
-                        font-weight: 700;
-                        color: $--button-color;
-                    }
-                }
-
-
-                .boxes-services-page {
-                    @include around;
-                    margin-top: 40px;
-
-
-
-                    .services-box-one {
-                        @include border;
-                        border: 1px solid $--black;
-                        display: inline-block;
-                        padding: 50px 50px;
-
-
-                        &:hover {
-                            transform: translateY(-15px);
-                            transition: .5s ease;
-                        }
-
-                        &:not(:hover) {
-                            transform: translateY(0);
-                            transition: .5s ease;
-                        }
-
-
-                        h6 {
-                            font-size: 40px;
-                            color: $--color-p;
-                        }
-
-                        h4 {
-                            font-size: 40px;
-                            font-weight: 700;
-                            color: $--button-color;
-                        }
-
-                        p {
-                            font-size: 20px;
-                            color: $--color-p;
-                            margin: 25px 0 65px 0;
-                        }
-
-                        span {
-                            font-size: 22px;
-                            font-weight: 700;
-                            margin-right: 15px;
-                        }
-
-                        i {
-                            font-size: 20px;
-
-                        }
-
-
-                    }
-                }
-
-
-            }
-
-        }
-
-        #portfolio-page {
-            .full-portfolio-page {
-                .content-portfolio {
-                    h6 {
-                        font-size: 25px;
-                        color: $--color-p;
-                    }
-
-                    h3 {
-                        font-size: 35px;
-                        font-weight: 700;
-                        color: $--button-color; 
-
-                    }
-                  }
-            }
-        }
-
-
-
+      }
     }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import "./responsive.scss";
