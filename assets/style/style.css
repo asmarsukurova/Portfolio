@@ -439,7 +439,148 @@ ol {
   color: #6b6666;
 }
 .one-page .full-page #portfolio-page .full-portfolio-page .content-portfolio h3 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #130F49;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FCE8D4;
+  padding: 110px 40px;
+  margin: 20px 40px;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio h6 {
+  font-size: 25px;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio p {
+  font-size: 22px;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio .image-box-in-portfolio {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio .image-box-in-portfolio img {
+  width: 40%;
+  height: 100px;
+  border-radius: 3cm;
+}
+.one-page .full-page #blog-page {
+  background-color: #e4eef9;
+  padding: 10px 40px;
+}
+.one-page .full-page #blog-page .full-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.one-page .full-page #blog-page .full-blog .content-blog {
+  bottom: 0;
+}
+.one-page .full-page #blog-page .full-blog .content-blog h6 {
+  font-size: 22px;
+}
+.one-page .full-page #blog-page .full-blog .content-blog h3 {
+  font-size: 55px;
+  font-weight: 700;
+}
+.one-page .full-page #blog-page .full-blog .plan-blog {
+  margin-right: 40px;
+}
+.one-page .full-page #blog-page .full-blog .plan-blog .one-plan {
+  border: 1px solid #000;
+  padding: 30px 20px;
+  margin-top: 20px;
+}
+.one-page .full-page #blog-page .full-blog .plan-blog .one-plan h3 {
+  margin-top: 10px;
+}
+.one-page .full-page #contact-page {
+  padding: 110px 40px;
+}
+.one-page .full-page #contact-page .full-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.one-page .full-page #contact-page .full-contact .content-contact h6 {
+  font-size: 25px;
+  color: #6b6666;
+}
+.one-page .full-page #contact-page .full-contact .content-contact h3 {
   font-size: 35px;
   font-weight: 700;
   color: #130F49;
+}
+.one-page .full-page #contact-page .full-contact .content-contact p {
+  font-size: 19px;
+  margin-bottom: 40px;
+}
+.one-page .full-page #contact-page .full-contact .content-contact ul li {
+  list-style: none;
+}
+.one-page .full-page #contact-page .full-contact .content-contact ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+.one-page .full-page #contact-page .full-contact .input-contact {
+  margin-right: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .name {
+  padding: 15px 50px 15px 10px;
+  margin-right: 45px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .email {
+  padding: 18px 100px 18px 10px;
+  margin-top: 20px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .message {
+  padding: 20px 100px 70px 10px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .last-button a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #130F49;
+  background-color: transparent;
+  border: 1px solid #130F49;
+  padding: 19px 50px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .last-button a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: #130F49;
+  padding: 20px 50px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  transition: 0.5s ease;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .last-button a:not(:hover) {
+  transition: 0.5s ease;
 }/*# sourceMappingURL=style.css.map */
