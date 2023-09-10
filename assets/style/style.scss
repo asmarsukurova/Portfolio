@@ -90,6 +90,12 @@
     }
   }
 
+  .full-header {
+    display: none;
+  }
+
+
+
   .full-page {
     #home-page {
       background-color: $--background-purple;
@@ -457,27 +463,27 @@
       }
     }
 
-        #portfolio-page {
-            .full-portfolio-page {
-                .content-portfolio {
-                    h6 {
-                        font-size: 25px;
-                        color: $--color-p;
-                    }
+    #portfolio-page {
+      .full-portfolio-page {
+        .content-portfolio {
+          h6 {
+            font-size: 25px;
+            color: $--color-p;
+          }
 
-                    h3 {
-                        font-size: 35px;
-                        font-weight: 700; 
-                        color: $--button-color; 
+          h3 {
+            font-size: 35px;
+            font-weight: 700;
+            color: $--button-color;
 
-                    }
-                  }
-            }
+          }
         }
-
-
-
+      }
     }
+
+
+
+  }
 }
 
 @import "./responsive.scss";

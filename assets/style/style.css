@@ -86,6 +86,9 @@ ol {
   color: #6b6666;
   margin-top: 40px;
 }
+.one-page .full-header {
+  display: none;
+}
 .one-page .full-page #home-page {
   background-color: #e4eef9;
   padding: 160px 0;
@@ -443,4 +446,13 @@ ol {
   font-size: 35px;
   font-weight: 700;
   color: #130F49;
+}
+
+@media screen and (max-width: 1300px) {
+  .d-none-1300 {
+    display: none;
+  }
+  .one-page .full-header {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
