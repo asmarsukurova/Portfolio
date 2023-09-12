@@ -438,6 +438,10 @@ ol {
 .one-page .full-page #services-page .full-services-page .boxes-services-page .services-box-one i {
   font-size: 20px;
 }
+.one-page .full-page #portfolio-page .full-portfolio-page {
+  background-color: #e4eef9;
+  padding: 40px;
+}
 .one-page .full-page #portfolio-page .full-portfolio-page .content-portfolio h6 {
   font-size: 25px;
   color: #6b6666;
@@ -447,6 +451,139 @@ ol {
   font-weight: 700;
   color: #130F49;
 }
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio {
+  background-color: #FCE8D4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0px;
+  margin: 40px 20px;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio h6 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio h3 {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio p {
+  font-size: 20px;
+  color: #6b6666;
+}
+.one-page .full-page #blog-page .full-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.one-page .full-page #blog-page .full-blog .content-blog h6 {
+  font-size: 25px;
+  color: #6b6666;
+}
+.one-page .full-page #blog-page .full-blog .content-blog h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #130F49;
+}
+.one-page .full-page #blog-page .full-blog .plan-blog {
+  margin: 40px;
+}
+.one-page .full-page #blog-page .full-blog .plan-blog .one-plan {
+  border: 1px solid #000;
+  padding: 35px;
+  margin-top: 20px;
+}
+.one-page .full-page #blog-page .full-blog .plan-blog .one-plan i {
+  font-size: 20px;
+}
+.one-page .full-page #blog-page .full-blog .plan-blog .one-plan span {
+  font-size: 18px;
+  color: #6b6666;
+}
+.one-page .full-page #blog-page .full-blog .plan-blog .one-plan h3 {
+  font-weight: 700;
+  margin-top: 10px;
+}
+.one-page .full-page #contact-page .full-contact {
+  background-color: #e4eef9;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.one-page .full-page #contact-page .full-contact .content-contact h6 {
+  font-size: 22px;
+  color: #6b6666;
+}
+.one-page .full-page #contact-page .full-contact .content-contact h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #130F49;
+  margin-bottom: 15px;
+}
+.one-page .full-page #contact-page .full-contact .content-contact p {
+  font-size: 20px;
+}
+.one-page .full-page #contact-page .full-contact .content-contact ul {
+  margin-top: 40px;
+}
+.one-page .full-page #contact-page .full-contact .content-contact ul li {
+  list-style: none;
+}
+.one-page .full-page #contact-page .full-contact .content-contact ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .name {
+  padding: 13px 60px 10px 5px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .email {
+  padding: 13px 60px 10px 5px;
+  margin-top: 20px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .message {
+  padding: 30px 60px 30px 5px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .last-button a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #130F49;
+  background-color: transparent;
+  border: 1px solid #130F49;
+  padding: 19px 50px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .last-button a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: #130F49;
+  padding: 20px 50px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  transition: 0.5s ease;
+}
+.one-page .full-page #contact-page .full-contact .input-contact .last-button a:not(:hover) {
+  transition: 0.5s ease;
+}
 
 @media screen and (max-width: 1300px) {
   .d-none-1300 {
@@ -454,5 +591,121 @@ ol {
   }
   .one-page .full-header {
     display: block;
+  }
+  .one-page .full-page #home-page {
+    padding: 0;
+  }
+  .one-page .full-page #home-page .home-display {
+    padding: 40px;
+  }
+  .one-page .full-page #home-page .home-display .text-content-home .content-box h2 {
+    font-size: 28px;
+  }
+  .one-page .full-page #home-page .home-display .text-content-home .content-box h5 {
+    margin-top: 13px;
+    font-size: 12px;
+  }
+  .one-page .full-page #home-page .home-display .text-content-home .button-box-home {
+    flex-direction: column;
+  }
+  .one-page .full-page #home-page .home-display .text-content-home .button-box-home .first-button {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .one-page .full-page #home-page .home-display .text-content-home .contact-box-home h5 {
+    font-size: 17px;
+  }
+  .one-page .full-page #about-page .full-about .first-part-about {
+    flex-direction: column;
+  }
+  .one-page .full-page #about-page .full-about .first-part-about .part-one .first-button a {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+  .one-page .full-page #about-page .full-about .first-part-about .part-two .content-part p {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 23px;
+  }
+  .one-page .full-page #about-page .full-about .first-part-about .part-two ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .one-page .full-page #about-page .full-about .first-part-about .part-two ul li a {
+    font-size: 15px;
+  }
+  .one-page .full-page #about-page .full-about .first-part-about .part-two ul li h5 {
+    font-size: 18px;
+  }
+  .one-page .full-page #about-page .full-about .boxes-part-about {
+    flex-direction: column;
+  }
+  .one-page .full-page #about-page .full-about .boxes-part-about .box-one {
+    width: 100%;
+  }
+  .one-page .full-page #about-page .full-about .boxes-part-about .box-two {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .one-page .full-page #about-page .full-about .boxes-part-about .box-three {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .one-page .full-page #experience-page .full-experience-page .boxes-experience .box-one h3 {
+    margin-bottom: 12px;
+  }
+  .one-page .full-page #experience-page .full-experience-page .boxes-experience .box-one p {
+    font-size: 13px;
+  }
+  .one-page .full-page #services-page .full-services-page .boxes-services-page {
+    flex-direction: column;
+  }
+  .one-page .full-page #services-page .full-services-page .boxes-services-page .services-box-one {
+    padding: 50px 13px;
+    margin-bottom: 30px;
+  }
+  .one-page .full-page #services-page .full-services-page .boxes-services-page .services-box-one h4 {
+    font-size: 33px;
+  }
+  .one-page .full-page #services-page .full-services-page .boxes-services-page .services-box-one p {
+    font-size: 15px;
+    margin: 11px 0px 31px 0;
+  }
+  .one-page .full-page #portfolio-page .full-portfolio-page .content-portfolio h3 {
+    font-size: 30px;
+  }
+  .one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio {
+    padding: 40px;
+    margin: 40px 5px;
+  }
+  .one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio h3 {
+    font-size: 23px;
+  }
+  .one-page .full-page #portfolio-page .full-portfolio-page .content-box-portfolio p {
+    font-size: 14px;
+  }
+  .one-page .full-page #blog-page .full-blog {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .one-page .full-page #contact-page .full-contact {
+    flex-direction: column;
+  }
+  .one-page .full-page #contact-page .full-contact .input-contact {
+    margin-top: 40px;
+  }
+  .one-page .full-page #contact-page .full-contact .input-contact .name {
+    padding: 13px 28px 10px 5px;
+  }
+  .one-page .full-page #contact-page .full-contact .input-contact .email {
+    padding: 20px 30px 20px 5px;
+  }
+  .one-page .full-page #contact-page .full-contact .input-contact .message {
+    padding: 30px 27px 30px 5px;
+  }
+  .one-page .full-page #contact-page .full-contact .content-contact ul li a {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

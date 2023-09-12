@@ -3,9 +3,219 @@
         display: none;
     }
 
+
+
     .one-page {
+
         .full-header {
             display: block;
+        }
+
+        .full-page {
+            #home-page {
+                padding: 0;
+
+                .home-display {
+                    padding: 40px;
+
+                    .text-content-home {
+                        .content-box {
+                            h2 {
+                                font-size: 28px;
+
+                            }
+
+                            h5 {
+                                margin-top: 13px;
+                                font-size: 12px;
+                            }
+                        }
+
+
+                        .button-box-home {
+                            flex-direction: column;
+
+                            .first-button {
+                                margin-bottom: 50px;
+                                margin-right: 0;
+                            }
+                        }
+
+                        .contact-box-home {
+                            h5 {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            #about-page {
+                .full-about {
+                    .first-part-about {
+                        flex-direction: column;
+
+                        .part-one {
+                            .first-button {
+                                a {
+                                    padding: 12px 30px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+
+                        .part-two {
+                            .content-part {
+                                p {
+                                    font-size: 14px;
+                                    margin-bottom: 0;
+                                    margin-top: 23px;
+                                }
+                            }
+
+                            ul {
+                                @include start;
+                                flex-direction: column;
+
+                                li {
+                                    a {
+                                        font-size: 15px;
+                                    }
+
+                                    h5 {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .boxes-part-about {
+                        flex-direction: column;
+
+                        .box-one {
+                            width: 100%;
+                        }
+
+                        .box-two {
+                            width: 100%;
+                            margin-top: 30px;
+                        }
+
+                        .box-three {
+                            width: 100%;
+                            margin-top: 30px;
+                        }
+                    }
+
+
+                }
+            }
+
+
+            #experience-page {
+                .full-experience-page {
+                    .boxes-experience {
+                        .box-one {
+                            h3 {
+                                margin-bottom: 12px;
+                            }
+
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #services-page {
+                .full-services-page {
+                    .boxes-services-page {
+                        flex-direction: column;
+
+                        .services-box-one {
+                            padding: 50px 13px;
+                            margin-bottom: 30px;
+
+                            h4 {
+                                font-size: 33px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                                margin: 11px 0px 31px 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #portfolio-page {
+                .full-portfolio-page {
+                    .content-portfolio {
+                        h3 {
+                            font-size: 30px;
+                        }
+                    }
+
+                    .content-box-portfolio {
+                        padding: 40px;
+                        margin: 40px 5px;
+
+                        h3 {
+                            font-size: 23px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            #blog-page {
+                .full-blog {
+                    flex-direction: column;
+                    margin-top: 40px;
+                }
+            }
+
+            #contact-page {
+                .full-contact {
+                    flex-direction: column;
+
+                    .input-contact {
+                        margin-top: 40px;
+
+                        .name {
+                            padding: 13px 28px 10px 5px;
+                        }
+
+                        .email {
+
+                            padding: 20px 30px 20px 5px;
+                        }
+
+                        .message {
+                            padding: 30px 27px 30px 5px;
+                        }
+
+                    }
+
+                    .content-contact {
+                        ul {
+                            li {
+                                a {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

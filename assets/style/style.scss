@@ -465,6 +465,11 @@
 
     #portfolio-page {
       .full-portfolio-page {
+        background-color: $--background-purple;
+        padding: 40px;
+
+
+
         .content-portfolio {
           h6 {
             font-size: 25px;
@@ -475,13 +480,180 @@
             font-size: 35px;
             font-weight: 700;
             color: $--button-color;
+          }
 
+
+        }
+
+        .content-box-portfolio {
+          background-color: $--pink;
+          @include center;
+          flex-direction: column;
+          padding: 100px 0px;
+          margin: 40px 20px;
+
+          h6 {
+            font-size: 25px;
+            font-weight: 700;
+          }
+
+          h3 {
+            font-size: 35px;
+            font-weight: 800;
+            margin-bottom: 20px;
+          }
+
+          p {
+            font-size: 20px;
+            color: $--color-p;
+          }
+
+
+        }
+
+      }
+    }
+
+    #blog-page {
+      .full-blog {
+        @include beetwen;
+
+
+        .content-blog {
+          h6 {
+            font-size: 25px;
+            color: $--color-p;
+          }
+
+          h3 {
+            font-size: 50px;
+            font-weight: 700;
+            color: $--button-color;
           }
         }
+
+
+        .plan-blog {
+          margin: 40px;
+
+          .one-plan {
+            border: 1px solid $--black;
+            padding: 35px;
+            margin-top: 20px;
+
+            i {
+              font-size: 20px;
+            }
+
+            span {
+              font-size: 18px;
+              color: $--color-p;
+            }
+
+            h3 {
+              font-weight: 700;
+              margin-top: 10px;
+            }
+          }
+        }
+
       }
     }
 
 
+    #contact-page {
+      .full-contact {
+        background-color: $--background-purple;
+        padding: 40px;
+        @include beetwen;
+
+        .content-contact {
+          h6 {
+            font-size: 22px;
+            color: $--color-p;
+          }
+
+          h3 {
+            font-size: 40px;
+            font-weight: 700;
+            color: $--button-color;
+            margin-bottom: 15px;
+          }
+
+          p {
+            font-size: 20px;
+          }
+
+
+          ul {
+            margin-top: 40px;
+
+            li {
+              list-style: none;
+
+              a {
+                text-decoration: none;
+                color: $--black;
+                font-size: 20px;
+              }
+            }
+          }
+
+
+        }
+
+        .input-contact {
+          @include center;
+          flex-direction: column;
+
+
+
+          .name {
+            padding: 13px 60px 10px 5px;
+          }
+
+          .email {
+            padding: 13px 60px 10px 5px;
+            margin-top: 20px;
+          }
+
+          .message{
+             padding: 30px 60px 30px 5px;
+               margin-top: 20px;
+               margin-bottom: 50px;
+          }
+
+
+           .last-button {
+              a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $--button-color;
+                background-color: transparent;
+                border: 1px solid $--button-color;
+                padding: 19px 50px;
+                @include border;
+
+                &:hover {
+                  text-decoration: none;
+                  font-size: 20px;
+                  color: $--white;
+                  background-color: $--button-color;
+                  padding: 20px 50px;
+                  @include border;
+                  transition: 0.5s ease;
+                }
+
+                &:not(:hover) {
+                  transition: 0.5s ease;
+                }
+              }
+            }
+
+        }
+
+      }
+    }
 
   }
 }

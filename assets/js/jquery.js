@@ -1,3 +1,3 @@
-$(".name").on("click", () => {
-    alert("salam")
-})
+// $(".name").on("click", () => {
+//     alert("salam")
+// })
