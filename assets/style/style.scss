@@ -617,38 +617,38 @@
             margin-top: 20px;
           }
 
-          .message{
-             padding: 30px 60px 30px 5px;
-               margin-top: 20px;
-               margin-bottom: 50px;
+          .message {
+            padding: 30px 60px 30px 5px;
+            margin-top: 20px;
+            margin-bottom: 50px;
           }
 
 
-           .last-button {
-              a {
+          .last-button {
+            a {
+              text-decoration: none;
+              font-size: 20px;
+              color: $--button-color;
+              background-color: transparent;
+              border: 1px solid $--button-color;
+              padding: 19px 50px;
+              @include border;
+
+              &:hover {
                 text-decoration: none;
                 font-size: 20px;
-                color: $--button-color;
-                background-color: transparent;
-                border: 1px solid $--button-color;
-                padding: 19px 50px;
+                color: $--white;
+                background-color: $--button-color;
+                padding: 20px 50px;
                 @include border;
+                transition: 0.5s ease;
+              }
 
-                &:hover {
-                  text-decoration: none;
-                  font-size: 20px;
-                  color: $--white;
-                  background-color: $--button-color;
-                  padding: 20px 50px;
-                  @include border;
-                  transition: 0.5s ease;
-                }
-
-                &:not(:hover) {
-                  transition: 0.5s ease;
-                }
+              &:not(:hover) {
+                transition: 0.5s ease;
               }
             }
+          }
 
         }
 
@@ -657,5 +657,24 @@
 
   }
 }
+
+
+// data-html
+
+.search-input {
+  padding: 13px 20px;
+  margin: 30px 0px 30px 30px;
+}
+
+.search-button {
+  font-size: 30px;
+  border: 1px solid $--ccc;
+  padding: 10px;
+}
+
+
+
+
+
 
 @import "./responsive.scss";
